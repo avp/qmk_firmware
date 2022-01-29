@@ -1,3 +1,4 @@
+// clang-format off
 #include QMK_KEYBOARD_H
 
 #define _QWERTY 0
@@ -47,15 +48,15 @@ const uint16_t PROGMEM keymaps[][MATRIX_ROWS][MATRIX_COLS] = {
 
     [_LOWER] = LAYOUT(
         //┌────────┬────────┬────────┬────────┬────────┬────────┐                          ┌────────┬────────┬────────┬────────┬────────┬────────┐
-        KC_ESC, KC_F1, KC_F2, KC_F3, KC_F4, KC_F5,                                           KC_F6, KC_F7, KC_F8, KC_F9, KC_F10, KC_EQL,
+           KC_ESC,   KC_F1,   KC_F2,   KC_F3,   KC_F4,   KC_F5,                              KC_F6,   KC_F7,   KC_F8,   KC_F9,   KC_F10,  KC_EQL,
         //├────────┼────────┼────────┼────────┼────────┼────────┤                          ├────────┼────────┼────────┼────────┼────────┼────────┤
-        RGB_TOG, KC_VOLD, KC_PGUP, KC_VOLU, _______, _______,                                 KC_F11, KC_F12, KC_F13, KC_F14,   KC_LBRC, KC_RBRC,
+           RGB_TOG, KC_VOLD, KC_PGUP, KC_VOLU, _______, _______,                                 KC_F11, KC_F12, KC_F13, KC_F14,   _______, _______,
         //├────────┼────────┼────────┼────────┼────────┼────────┤                          ├────────┼────────┼────────┼────────┼────────┼────────┤
-        _______, KC_HOME, KC_PGDN, KC_END, _______, KC_UNDS,                                 KC_LEFT, KC_DOWN, KC_UP, KC_RGHT, KC_INS, KC_PAUS,
+           _______, KC_HOME, KC_PGDN, KC_END, _______, _______,                                 KC_LEFT, KC_DOWN, KC_UP, KC_RGHT, KC_INS, KC_PAUS,
         //├────────┼────────┼────────┼────────┼────────┼────────┼────────┐        ┌────────┼────────┼────────┼────────┼────────┼────────┼────────┤
-        KC_MUTE, KC_MPRV, KC_MPLY, KC_MNXT, _______, KC_MINS, KC_LPRN,              TO(_GAME), KC_PLUS, _______, KC_LBRC, KC_RBRC, KC_PSCR, _______,
+           _______, KC_MPRV, KC_MPLY, KC_MNXT, KC_MUTE, _______, _______,              TO(_GAME), _______, _______, KC_LBRC, KC_RBRC, KC_PSCR, _______,
         //└────────┴────────┴────────┴───┬────┴───┬────┴───┬────┴───┬────┘        └───┬────┴───┬────┴───┬────┴───┬────┴────────┴────────┴────────┘
-        _______, KC_BSPC, _______,                       KC_DEL, _______, _______
+            _______, KC_BSPC, _______,                    KC_DEL, _______, _______
         // └────────┴────────┴────────┘                 └────────┴────────┴────────┘
         ),
 
